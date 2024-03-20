@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juliana🥵</title>
+
+    <style>
+      body {
+        background: #752bff;
+        color: rgb(198, 160, 255);
+        text-shadow: 2px 2px 0px #000;
+      }
+
+      h1 {
+        color: rgb(30, 195, 210);
+        background: #e100ff;
+        text-align: center;
+      }
+      h2 {
+        color: rgb(255, 0, 255);
+        background: blue;
+        text-align: left;
+        text-shadow: 3px 2px 0px #000;
+      }
+      h3 {
+        color: rgb(186, 244, 244);
+        background: ;
+        text-align: center;
+        text-shadow: 3px 2px 3px #ff00ae;
+      }
+      del {
+        text-decoration-color: rgb(0, 255, 174);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><i>Documento </i></h1>
+    <h3>
+      Meu nome é Yoshikage Kira. Tenho 33 anos. Minha casa fica na parte
+      nordeste de Morioh, onde todas as casas estão, e eu não sou casado. Eu
+      trabalho como funcionário das lojas de departamentos Kame Yu e chego em
+      casa todos os dias às oito da noite, no máximo. Eu não fumo, mas
+      ocasionalmente bebo. Estou na cama às 23 horas e me certifico de ter oito
+      horas de sono, não importa o que aconteça. Depois de tomar um copo de
+      leite morno e fazer cerca de vinte minutos de alongamentos antes de ir
+      para a cama, geralmente não tenho problemas para dormir até de manhã.
+      Assim como um bebê, eu acordo sem nenhum cansaço ou estresse pela manhã.
+      Foi-me dito que não houve problemas no meu último check-up. Estou tentando
+      explicar que sou uma pessoa que deseja viver uma vida muito tranquila. Eu
+      cuido para não me incomodar com inimigos, como ganhar e perder, isso me
+      faria perder o sono à noite. É assim que eu lido com a sociedade e sei que
+      é isso que me traz felicidade. Embora, se eu fosse lutar, não perderia
+      para ninguém.
+    </h3>
+    <h2><del>Yoshikage Kira</del></h2>
+
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+
+    <h2>Alerta de Mensagem</h2>
+    <p style="text-align: center">
+      <button onclick="alerta()" style="">🚨Alerta!🚨</button>
+    </p>
+    
+<!-- ------------------------------------------------------ -->
+ <h2>Altere a cor do funfo do site clicando em uma das cores abaixo</h2>
+
+    <p style="text-align: center">
+      <button onclick="roxo()" style="background: purple; color: white">
+        Roxo
+      </button>
+
+      <button onclick="blue()" style="background: blue; color: white">
+        Azul
+      </button>
+
+      <button onclick="red()" style="background: red; color: white">
+        Vermelho
+
+      <button onclick="escolheCor()">Escolha a cor</button>
+
+
+    </p>
+  </body>
+  <script>
+
+    function roxo() {
+      document.getElementsByTagName("body")[0].style.background = "purple";
+    }
+
+    function red() {
+      document.getElementsByTagName("body")[0].style.background = "red";
+    }
+
+    function blue() {
+      document.getElementsByTagName("body")[0].style.background = "blue";
+    }
+
+    escolheCor = (cor) => {
+      if (cor !== "") {
+        document.querySelector("body").style.background = cor;
+      }
+      if (cor == null) {
+        document.querySelector("body").style.background = prompt(
+          "Informe uma cor em inglês:"
+        );
+      }
+    };
+
+
+    console.log("Olá Mundo!");
+
+    function alerta() {
+      var nome = prompt("Olá, informe seu nome:");
+      alert(`Olá ${nome}`);
+    }
+  </script>
+</html>
