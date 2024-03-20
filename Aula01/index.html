@@ -61,9 +61,9 @@
     <p style="text-align: center">
       <button onclick="alerta()" style="">🚨Alerta!🚨</button>
     </p>
-    
-<!-- ------------------------------------------------------ -->
- <h2>Altere a cor do funfo do site clicando em uma das cores abaixo</h2>
+
+    <!-- ------------------------------------------------------ -->
+    <h2>Altere a cor do funfo do site clicando em uma das cores abaixo</h2>
 
     <p style="text-align: center">
       <button onclick="roxo()" style="background: purple; color: white">
@@ -76,14 +76,10 @@
 
       <button onclick="red()" style="background: red; color: white">
         Vermelho
-
-      <button onclick="escolheCor()">Escolha a cor</button>
-
-
+      </button>
     </p>
   </body>
   <script>
-
     function roxo() {
       document.getElementsByTagName("body")[0].style.background = "purple";
     }
@@ -95,18 +91,6 @@
     function blue() {
       document.getElementsByTagName("body")[0].style.background = "blue";
     }
-
-    escolheCor = (cor) => {
-      if (cor !== "") {
-        document.querySelector("body").style.background = cor;
-      }
-      if (cor == null) {
-        document.querySelector("body").style.background = prompt(
-          "Informe uma cor em inglês:"
-        );
-      }
-    };
-
 
     console.log("Olá Mundo!");
 

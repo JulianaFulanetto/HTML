@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+body {
+    /* background: url(../img/minimalist.png) no-repeat  top/cover;
+} */
+background: #1F2544;
+color:#ffffff;
+margin:0;
+padding: 0;
+font-family: "Dangrek", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #5b6158
+}
+
+.textoCentro{
+    text-align:center
+}
+
+h1.textoCentro{
+    margin-top: 0;
+    padding: 10px
+}
+
+h1 a {
+    background: #2b252a;
+    padding: 5px;
+    border: solid 1px #71816a;
+    border-radius: 30px 0px;
+    box-shadow: 2px 2px 2px;
+}
+
+.fundoLindo{
+    background: #373c40;
+}
+
+h1 a:hover{
+    background:#38393a ;
+}

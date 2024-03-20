@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 02</title>
+    <title>Formulario</title>
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <h1 class="textoCentro fundoLindo">
-        <a href="form.html">Formulario</a>
+      <a href="index.html">Home</a>
       <a href="https://www.google.com.br/" target="_blank">Google</a>
       <a href="https://github.com/JulianaFulanetto/" target="_parent"
         >Git-Hub</a
@@ -18,13 +18,23 @@
       <a href="https://instagram.com/" target="_top">instagram</a>
     </h1>
 
-    <button class="fundoLindo" onclick="alerta()">🚨ALERTA🚨</button>
-    <img
-      src="./img/minimalist.png"
-      width="300px"
-      alt="Quarto com uma janela com um gato olhando para fora, uma iluminária em cima da mesa"
-      title="imagem de gatinho"
-    />
+    <form class="textoCentro" action="">
+      <h3>Entre em contato</h3>
+      <p>Ficaremos felizes em atende-lo</p>
+      <p>
+        <input type="text" size="40" placeholder="Nome:" />
+        <br />
+        <input type="email" size="40" placeholder="E-mail:" />
+        <br />
+        <textarea 
+          name=""
+          id="" 
+          cols="40" 
+          rows="10"
+          placeholder="Mensagem:"
+        ></textarea>
+        </p>
+      <input type="submit" value="Enviar" />
+    </form>
   </body>
-  <script src="./js/script.js"></script>
 </html>
